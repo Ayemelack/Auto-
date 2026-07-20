@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- Excellence Driving School Logo - Dark Theme -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#F3A183" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3388ff" />
+      <stop offset="100%" stop-color="#0056b3" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  
+  <g transform="translate(10, 10)" filter="url(#shadow)">
+    <!-- Shield / Road Motif -->
+    <path d="M 50 100 Q 50 100 10 50 L 10 20 Q 50 0 50 0 Q 50 0 90 20 L 90 50 Q 50 100 50 100 Z" fill="url(#blueGradient)" />
+    
+    <!-- Inner Road Element -->
+    <path d="M 50 90 Q 50 90 20 48 L 20 28 Q 50 12 50 12 Q 50 12 80 28 L 80 48 Q 50 90 50 90 Z" fill="none" stroke="#e0e0e0" stroke-width="2" />
+    
+    <!-- Steering Wheel / Road Lines -->
+    <circle cx="50" cy="45" r="16" fill="none" stroke="url(#goldGradient)" stroke-width="4" />
+    <path d="M 50 29 L 50 40 M 34 45 L 45 45 M 66 45 L 55 45 M 50 61 L 50 50" stroke="url(#goldGradient)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Golden Accent -->
+    <path d="M 10 20 Q 50 0 50 0" fill="none" stroke="url(#goldGradient)" stroke-width="4" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(130, 60)">
+    <text x="0" y="0" font-family="'Outfit', 'Poppins', sans-serif" font-weight="800" font-size="34" fill="#ffffff" letter-spacing="1">EXCELLENCE</text>
+    <text x="0" y="24" font-family="'Manrope', 'Outfit', sans-serif" font-weight="500" font-size="16" fill="#a0a0a0" letter-spacing="3.5">DRIVING SCHOOL</text>
+  </g>
+</svg>

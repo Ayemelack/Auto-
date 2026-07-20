@@ -1,0 +1,62 @@
+/* Typography System */
+body {
+    font-family: var(--font-body);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    color: var(--clr-text-main);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--clr-navy);
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; }
+h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 600; }
+h5 { font-size: 1.125rem; font-weight: 600; }
+h6 { font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--clr-primary); }
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--clr-text-muted);
+}
+
+p.lead {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: var(--clr-text-main);
+    font-weight: 500;
+}
+
+.text-center { text-align: center; }
+.text-primary { color: var(--clr-primary); }
+.text-accent { color: var(--clr-accent); }
+.text-white { color: var(--clr-white); }
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}

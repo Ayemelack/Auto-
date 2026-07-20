@@ -1,0 +1,59 @@
+/* Global Layout & Grid System */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-bg-light { background-color: var(--clr-bg-light); }
+.section-bg-white { background-color: var(--clr-white); }
+.section-bg-dark {
+    background-color: var(--clr-navy);
+    color: var(--clr-white);
+}
+.section-bg-dark h2, .section-bg-dark h3, .section-bg-dark p {
+    color: var(--clr-white);
+}
+.section-bg-dark .section-subtitle {
+    color: var(--clr-accent);
+}
+
+/* Grid Utilities */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+/* Flex Utilities */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: 1rem; }
+.gap-2 { gap: 2rem; }
+
+/* Spacing Helpers */
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section { padding: 4rem 0; }
+    .container { padding: 0 1.5rem; }
+}

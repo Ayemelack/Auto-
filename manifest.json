@@ -1,0 +1,17 @@
+{
+  "name": "Excellence Driving School",
+  "short_name": "Excellence",
+  "description": "Professional driving lessons in Buea, Cameroon.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0056b3",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
